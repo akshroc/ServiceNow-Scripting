@@ -1,0 +1,13 @@
+Navigate to System Definition > Business Rules.
+Click on New to create a new Business Rule.
+Name the Business Rule, for example, "Assign Task to Assignment Group based on Incident Category".
+Set the Table to "Incident" as we're basing our logic on incident records.
+Choose the appropriate When to run condition, such as "Before" or "After". In this case, we'll choose "Before" so we can set the assignment group before the record is inserted or updated.
+Set the Advanced checkbox if needed (for more complex conditions).
+
+
+Save the Business Rule:
+After pasting the script, save the business rule.
+
+Testing:
+Create a new incident record in ServiceNow, and upon saving, you should see that the assignment group field is automatically populated based on the category of the incident.
